@@ -5,14 +5,31 @@ public class MyList<T>
     private MyNode<T> head;
     private int size;
 
+    private ListStrategy<T> listStrategy;
+
+    public ListStrategy<T> getListStrategy() {
+        return listStrategy;
+    }
+
+    public void setListStrategy(ListStrategy<T> listStrategy) {
+        this.listStrategy = listStrategy;
+    }
+
     public MyList(MyNode<T> head, int size)
     {
         this.head = head;
         this.size = size;
     }
 
+    public MyList()
+    {
+        head = null;
+        size=0;
+    }
+
     public MyNode<T> getHead()
     {
+
         return head;
     }
 
