@@ -3,9 +3,10 @@ package Factory.creator;
 import java.awt.geom.Rectangle2D;
 import java.awt.geom.RectangularShape;
 
-public class RectangleMaker implements factory.creator.ShapeMaker {
+public class RectangleMaker implements ShapeMaker {
     @Override
-    public RectangularShape buildShape() {
+    public RectangularShape buildShape()
+    {
         return new Rectangle2D.Double();
     }
 }

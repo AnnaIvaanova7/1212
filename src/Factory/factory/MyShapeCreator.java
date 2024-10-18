@@ -1,7 +1,6 @@
 package Factory.factory;
 
-import Factory.factory.ColorBehaviorMaker;
-import factory.creator.ShapeMaker;
+import Factory.creator.ShapeMaker;
 
 import java.awt.geom.RectangularShape;
 
@@ -13,15 +12,4 @@ public class MyShapeCreator {
         this.colorBehaviorMaker = colorBehaviorMaker;
     }
 
-    public void setShapeMaker(ShapeMaker shapeMaker) {
-        this.shapeMaker = shapeMaker;
-    }
-
-    public void setColorBehaviorMaker(ColorBehaviorMaker colorBehaviorMaker) {
-        this.colorBehaviorMaker = colorBehaviorMaker;
-    }
-
-    public RectangularShape createShape() {
-        return shapeMaker.buildShape();
-    }
 }

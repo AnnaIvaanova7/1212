@@ -1,4 +1,4 @@
-package factory.creator;
+package Factory.creator;
 
 import java.awt.geom.RectangularShape;
 
